@@ -1,0 +1,17 @@
+﻿{
+	"manifest_version": 2,
+	"name": "hasoffer",
+	"version": "0.0.1",
+	"permissions" : ["tabs","http://localhost/","https://www.flipkart.com/","https://m.snapdeal.com/","http://www.amazon.in/","http://www.fanli.com/"],
+	"content_scripts":[{
+		"matches":["https://www.flipkart.com/*","https://m.snapdeal.com/*","http://www.fanli.com/*","http://www.amazon.in/*"],
+		"js":["hasoffer.js"],
+		"css":["hasoffer.css"]
+	}],
+  "web_accessible_resources": [
+    "hasoffer_icon.png",
+    "close.png",
+    "default.png",
+    "default_product_img.png"
+  ]
+}
